@@ -440,6 +440,13 @@ section {
   background-position: left;
 }
 
+.menu-03 {
+  background: url(../img/menu3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
 .hero-section::before {
   content: "";
   display: block;
