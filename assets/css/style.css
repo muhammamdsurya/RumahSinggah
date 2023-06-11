@@ -433,6 +433,13 @@ section {
   background-position: left;
 }
 
+.menu-02 {
+  background: url(../img/menu2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
 .hero-section::before {
   content: "";
   display: block;
@@ -456,6 +463,12 @@ section {
 @media screen and (max-width: 992px) {
   .hero-section .wave {
     bottom: -180px;
+  }
+  .hero-section .row .col-lg-5 {
+    order: 1;
+  }
+  .hero-section .row .col-lg-7 {
+    order: 2;
   }
 }
 
@@ -526,12 +539,13 @@ section {
   overflow: hidden;
 }
 .card {
-  transition: box-shadow 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   border: none;
   cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(-10px);
 }
 
 .card img {
@@ -553,6 +567,17 @@ section {
   font-size: 12px;
   font-weight: 500;
   color: #4d4d4d;
+}
+
+/* Problem */
+#problem .row .col-md-4 {
+  margin-bottom: 30px;
+  transition: 0.3s ease-in-out;
+}
+
+#problem .row .col-md-4:hover {
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
 }
 
 .button .btn.btn-brown {

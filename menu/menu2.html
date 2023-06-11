@@ -18,7 +18,7 @@
       rel="stylesheet"
     />
 
-    <!-- Vendor Link -->
+    <!-- Vendor CSS Files -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.7/dist/sweetalert2.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -54,7 +54,7 @@
     <!-- End Header -->
 
     <main id="main">
-      <section class="hero-section menu-01 inner-page">
+      <section class="hero-section menu-02 inner-page">
         <div class="wave">
           <svg
             width="1920px"
@@ -90,9 +90,9 @@
             <div class="col-12">
               <div class="row justify-content-center">
                 <div class="col-md-7 text-center hero-text">
-                  <h1 data-aos="fade-up" data-aos-delay="">Rangkul Aku</h1>
+                  <h1 data-aos="fade-up" data-aos-delay="">Dengarkan Aku</h1>
                   <p class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                    konseling dengan ahli psikolog 
+                    sharing dengan ahli psikolog 
                   </p>
                 </div>
               </div>
@@ -105,7 +105,7 @@
       <div class="container">
         <div class="row justify-content-center text-center mb-5" data-aos="fade-down">
           <div class="col-md-5">
-            <h2 class="section-heading">Rangkul Aku</h2>
+            <h2 class="section-heading">Dengarkan Aku</h2>
           </div>
         </div>
         <div class="row justify-content-evenly">
@@ -115,26 +115,29 @@
               <div class="swiper-wrapper">
 
                 <div class="swiper-slide">
-                  <img src="../assets/img/menu1.jpg" alt="">
+                  <img src="../assets/img/menu2.jpg" alt="">
                 </div><!-- End testimonial item -->
 
                 <div class="swiper-slide">
-                  <img src="../assets/img/menu1.jpg" alt="">
+                  <img src="../assets/img/menu2.jpg" alt="">
                 </div><!-- End testimonial item -->
 
                 <div class="swiper-slide">
-                  <img src="../assets/img/menu1.jpg" alt="">
+                  <img src="../assets/img/menu2.jpg" alt="">
                 </div><!-- End testimonial item -->
               </div>
               <div class="swiper-pagination"></div>
             </div>
           </div>
           <div class="col-md-5" data-aos="fade-right">
-            <p class="fs-5">Kami percaya bahwa berbagi cerita dan merangkul emosi adalah langkah penting dalam proses penyembuhan dan pertumbuhan pribadi. Melalui menu ini, Anda memiliki kesempatan untuk membuka diri kepada ahli psikolog yang siap mendengarkan tanpa penilaian. Mereka akan memberikan perhatian penuh, empati, dan dukungan yang Anda butuhkan.</p>
+            <p class="fs-5">Kami menyadari bahwa setiap fase kehidupan membawa tantangan unik dan kompleks, dan "Rangkul Aku" hadir untuk memberikan ruang aman bagi individu dari berbagai rentang usia untuk berbagi dan mendapatkan bantuan yang mereka butuhkan.</p>
 <p class="fs-5">
-Dalam lingkungan yang terjaga kerahasiaannya, Anda dapat merasa bebas untuk mengungkapkan perasaan Anda tanpa takut dihakimi atau dipandang rendah. Kami menghargai setiap cerita yang Anda bagikan, baik itu cerita yang menceritakan tantangan hidup, kegembiraan, atau pengalaman yang mempengaruhi kesejahteraan emosional Anda.
+Dalam layanan ini, Anda akan bertemu dengan ahli psikolog yang berpengalaman dan terlatih dalam bekerja dengan anak-anak, remaja, dan dewasa. Mereka memiliki pemahaman yang mendalam tentang perkembangan psikologis dan tantangan yang sering dihadapi pada setiap fase kehidupan.
+
 </p>
-            <button onclick="ajukanJadwal()" class="btn btn-brown">Ajukan Jadwal</button>
+           <button onclick="ajukanJadwal()" class="btn btn-brown">Ajukan Jadwal</button>
+
+
           </div>
         </div>
       </div>
@@ -382,7 +385,7 @@ Dalam lingkungan yang terjaga kerahasiaannya, Anda dapat merasa bebas untuk meng
     <script>
 function ajukanJadwal() {
   Swal.fire({
-    title: 'Masukkan tanggal jadwal Rangkul Aku',
+    title: 'Masukkan tanggal jadwal Dengarkan Aku',
     input: 'text',
     inputAttributes: {
       autocapitalize: 'off'
@@ -393,7 +396,7 @@ function ajukanJadwal() {
     showLoaderOnConfirm: true,
     preConfirm: (jadwal) => {
       if (jadwal) {
-        var waURL = "https://api.whatsapp.com/send?phone=6285714687285&text=Halo!%20Saya%20ingin%20mengajukan%20jadwal%20Rangkul%20Aku%20tanggal%20" + encodeURIComponent(jadwal);
+        var waURL = "https://api.whatsapp.com/send?phone=6285714687285&text=Halo!%20Saya%20ingin%20mengajukan%20jadwal%20Dengarkan%20Aku%20tanggal%20" + encodeURIComponent(jadwal);
         window.location.href = waURL;
       }
     }
