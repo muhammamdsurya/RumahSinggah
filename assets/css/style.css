@@ -425,6 +425,14 @@ section {
   background-position: center bottom;
   position: relative;
 }
+
+.menu-01 {
+  background: url(../img/menu1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+
 .hero-section::before {
   content: "";
   display: block;
@@ -473,7 +481,7 @@ section {
 
 @media screen and (max-width: 992px) {
   .hero-section.inner-page .hero-text {
-    margin-top: -80px;
+    margin-top: 4rem;
   }
 }
 
@@ -501,6 +509,16 @@ section {
 .hero-section p {
   font-size: 18px;
   color: #fff;
+}
+
+.iphone-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphone-wrap img {
+  max-width: 100%;
 }
 
 .slide-container {
