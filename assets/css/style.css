@@ -587,6 +587,10 @@ section {
   transform: translateY(-10px);
 }
 
+iframe {
+  max-width: 100%;
+}
+
 .button .btn.btn-brown {
   padding: 8px !important;
 }
